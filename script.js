@@ -96,6 +96,41 @@ line.addEventListener("mouseleave",function(details){
 });
 });
 
+document.querySelectorAll(".line").forEach(function (line){
+  var rotate=0;
+var diffrot =0;
+line.addEventListener("touchmove",function(details){
+var diff = (details.clientY-line.getBoundingClientRect().top);
+// to rotate we have to find the place where the mouse is mving
+
+ diffrot = details.clientX-rotate;
+rotate=details.clientX;
+  gsap.to(line.querySelector("img"),{
+  opacity:1,
+  ease: Power3,
+  // for top we have to findthe difference bet clienty and that div
+  top:diff,
+  left: details.clientX,
+  rotate:gsap.utils.clamp(-20,20,diffrot * 0.5),
+}); 
+});
+});
+
+document.querySelectorAll(".line").forEach(function (line){
+  var rotate=0;
+var diffrot =0;
+line.addEventListener("touchend",function(details){
+
+  gsap.to(line.querySelector("img"),{
+  opacity:0,
+  ease: Power3,
+
+  // for top we have to findthe difference bet clienty and that div
+
+}); 
+});
+});
+
 var tl3 = gsap.timeline({scrollTrigger:{
     trigger: ".fourth",
     start: "10% 95%",
