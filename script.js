@@ -101,7 +101,7 @@ var tl3 = gsap.timeline({scrollTrigger:{
     start: "10% 95%",
     end: "20% 50%",
     scrub: true,
-     markers: true,
+    
 }})
 tl3.to(".orange-cut",{
     
