@@ -288,6 +288,8 @@ flex-direction: column;
     margin-left: 40vw;
     opacity: 1;
 }
+
+
 /* For phones and small devices (max width: 768px) */
 @media (max-width: 768px) {
 
@@ -414,15 +416,18 @@ flex-direction: column;
     text-align: center;
   }
 
-  .line img,
   .ok, .okk, .okkk {
-    width: 150px;
-    margin-left: 0;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    scale: 0.6;
-  }
+  position: relative;
+  margin-left: 0;
+  scale: 0.45;
+  width: 40vw;  /* Controls visual size */
+  max-width: 150px;
+  height: auto;
+  display: block;
+  margin-top: 3vw;
+  margin-bottom: 4vw;
+}
+
 
   .fourth h4 {
     margin-left: 0;
