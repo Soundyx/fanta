@@ -145,3 +145,50 @@ tl3.to(".orange-cut",{
     width:"6.7%",
 }, 'ca')
 
+ScrollTrigger.matchMedia({
+  // Mobile
+  "(max-width: 768px)": function() {
+    let tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".two",
+        start: "top 85%",
+        end: "bottom 50%",
+        scrub: true,
+      }
+    });
+
+    tl.to(".fenta", {
+      top: "110vh",
+      left: "5vw",
+      width: "60%",
+    }, 'orange');
+
+    tl.to(".orange-cut", {
+      top: "150vh",
+      left: "20vw",
+      width: "25vw"
+    }, 'orange');
+  },
+
+  // Desktop
+  "(min-width: 769px)": function() {
+    let tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".two",
+        start: "0% 95%",
+        end: "70% 50%",
+        scrub: true,
+      }
+    });
+
+    tl.to(".fenta", {
+      top: "120%",
+      left: "1%"
+    }, 'orange');
+
+    tl.to(".orange-cut", {
+      top: "160%",
+      left: "25%"
+    }, 'orange');
+  }
+});
