@@ -288,3 +288,145 @@ flex-direction: column;
     margin-left: 40vw;
     opacity: 1;
 }
+/* For phones and small devices (max width: 768px) */
+@media (max-width: 768px) {
+
+  .nav {
+    flex-direction: row;
+    height: 60px;
+    padding: 0 5vw;
+    justify-content: space-between;
+  }
+
+  .centrenav {
+    display: none; /* hide links on small screens */
+  }
+
+  .ri-menu-line {
+    font-size: 6vw;
+  }
+
+  .one h1 {
+    font-size: 18vw;
+    text-align: center;
+  }
+
+  .fenta {
+    width: 70%;
+  }
+
+  .orange-cut {
+    width: 25%;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .orangee {
+    width: 30%;
+    left: 60%;
+  }
+
+  .leaf1,
+  .leaf2,
+  .coconutleaf {
+    display: none;
+  }
+
+  .two {
+    flex-direction: column;
+    height: auto;
+    padding: 10vw 5vw;
+  }
+
+  .left-2, .right-2 {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .left-2 svg {
+    width: 100%;
+    margin: 10vh auto;
+  }
+
+  .right-2 h1 {
+    font-size: 9vw;
+  }
+
+  .right-2 p {
+    font-size: 4vw;
+    width: 95%;
+  }
+
+  .three {
+    flex-direction: column;
+    height: auto;
+    gap: 8vw;
+    padding: 10vw 0;
+  }
+
+  .card {
+    width: 80%;
+    height: 60vh;
+    margin-top: 5vw;
+  }
+
+  .card h1 {
+    font-size: 6vw;
+    margin-top: 50%;
+  }
+
+  .card button {
+    font-size: 4vw;
+    padding: 2vw 4vw;
+  }
+
+  .icy, .berry {
+    width: 50%;
+    height: auto;
+    margin-bottom: 40vw;
+  }
+
+  .icyb, .berryb {
+    width: 55%;
+    margin-bottom: 65vw;
+  }
+
+  .fourth {
+    height: auto;
+    padding-bottom: 10vw;
+  }
+
+  .whats {
+    font-size: 8vw;
+    padding: 10vw 5vw;
+  }
+
+  .line {
+    padding: 8vw 5vw;
+    font-size: 5.5vw;
+  }
+
+  .line h1 {
+    margin-right: 0;
+    font-size: 6vw;
+    text-align: center;
+  }
+
+  .line img,
+  .ok, .okk, .okkk {
+    width: 150px;
+    margin-left: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    scale: 0.6;
+  }
+
+  .fourth h4 {
+    margin-left: 0;
+    text-align: center;
+    font-size: 3.5vw;
+  }
+}
