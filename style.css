@@ -416,8 +416,8 @@ flex-direction: column;
     text-align: center;
   }
 
-  .line img,
-  .ok, .okk, .okkk {
+  .line img
+  {
     width: 150px;
     margin-left: 0;
     position: absolute;
