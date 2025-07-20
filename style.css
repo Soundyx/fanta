@@ -416,7 +416,16 @@ flex-direction: column;
     text-align: center;
   }
 
+  .line img,
   .ok, .okk, .okkk {
+    width: 150px;
+    margin-left: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    scale: 0.6;
+  }
+.ok, .okk, .okkk {
   position: relative;
   margin-left: 0;
   scale: 0.45;
@@ -427,7 +436,6 @@ flex-direction: column;
   margin-top: 3vw;
   margin-bottom: 4vw;
 }
-
 
   .fourth h4 {
     margin-left: 0;
